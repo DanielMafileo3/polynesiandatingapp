@@ -78,11 +78,14 @@ class Login extends StatelessWidget {
                   minWidth: 300,
                   height: 50,
                   buttonColor: Colors.white,
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18),
-                        side: BorderSide(
-                            color: Color.fromARGB(255, 255, 82, 169))),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18),
+                          side: BorderSide(
+                              color: Color.fromARGB(255, 255, 82, 169))),
+                    ),
+
                     onPressed: () async {
                       // final result = await FacebookAuth.instance.login(
                       //   permissions: [
